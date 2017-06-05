@@ -114,6 +114,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4AA-8g-zbJ"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="aQ5-zv-oNY" id="3bp-ee-5cQ"/>
+                        <outlet property="btnRegister" destination="lcK-oh-ev0" id="gXr-Bw-cDL"/>
+                        <outlet property="txtFldPassword" destination="cq3-hC-YzL" id="q6y-t9-bRK"/>
+                        <outlet property="txtFldUsername" destination="pdn-CL-rQ3" id="GQu-3M-d4O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Its-nI-zsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

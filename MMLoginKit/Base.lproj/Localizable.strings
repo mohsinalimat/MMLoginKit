@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MMLoginKit
+
+  Created by Mohsinali Matiya on 05/06/17.
+  Copyright © 2017 Mohsinali Matiya. All rights reserved.
+*/
+
+"Username" = "Username";
+"Password" = "Password";
+"Login" = "Login";
+"Register" = "Register";

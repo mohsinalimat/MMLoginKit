@@ -16,6 +16,8 @@
 		BCC714E61EE530CC00051843 /* MMTextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC714E21EE52E1D00051843 /* MMTextFieldEffects.swift */; };
 		BCC714E91EE5311200051843 /* MMCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC714E71EE5311200051843 /* MMCustomButton.swift */; };
 		BCC714EA1EE5311200051843 /* MMCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC714E81EE5311200051843 /* MMCustomView.swift */; };
+		BCC714EC1EE5542E00051843 /* MMLocalizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC714EB1EE5542E00051843 /* MMLocalizeUtils.swift */; };
+		BCC714EF1EE554FE00051843 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCC714F11EE554FE00051843 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		BCC714E41EE5301E00051843 /* MMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMTextField.swift; sourceTree = "<group>"; };
 		BCC714E71EE5311200051843 /* MMCustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMCustomButton.swift; sourceTree = "<group>"; };
 		BCC714E81EE5311200051843 /* MMCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMCustomView.swift; sourceTree = "<group>"; };
+		BCC714EB1EE5542E00051843 /* MMLocalizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMLocalizeUtils.swift; sourceTree = "<group>"; };
+		BCC714F01EE554FE00051843 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BCC714F21EE5551A00051843 /* gu-IN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "gu-IN"; path = "gu-IN.lproj/Localizable.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,7 @@
 		BCC714CE1EE52DA000051843 /* MMLoginKit */ = {
 			isa = PBXGroup;
 			children = (
+				BCC714EB1EE5542E00051843 /* MMLocalizeUtils.swift */,
 				BCC714E11EE52E0700051843 /* MMTextField */,
 				BCC714CF1EE52DA000051843 /* AppDelegate.swift */,
 				BCC714D11EE52DA000051843 /* ViewController.swift */,
@@ -69,6 +75,7 @@
 				BCC714D61EE52DA000051843 /* Assets.xcassets */,
 				BCC714D81EE52DA000051843 /* LaunchScreen.storyboard */,
 				BCC714DB1EE52DA000051843 /* Info.plist */,
+				BCC714F11EE554FE00051843 /* Localizable.strings */,
 			);
 			path = MMLoginKit;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"gu-IN",
 			);
 			mainGroup = BCC714C31EE52D9F00051843;
 			productRefGroup = BCC714CD1EE52DA000051843 /* Products */;
@@ -144,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCC714DA1EE52DA000051843 /* LaunchScreen.storyboard in Resources */,
+				BCC714EF1EE554FE00051843 /* Localizable.strings in Resources */,
 				BCC714D71EE52DA000051843 /* Assets.xcassets in Resources */,
 				BCC714D51EE52DA000051843 /* Main.storyboard in Resources */,
 			);
@@ -162,6 +171,7 @@
 				BCC714EA1EE5311200051843 /* MMCustomView.swift in Sources */,
 				BCC714E51EE5301E00051843 /* MMTextField.swift in Sources */,
 				BCC714E91EE5311200051843 /* MMCustomButton.swift in Sources */,
+				BCC714EC1EE5542E00051843 /* MMLocalizeUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +194,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		BCC714F11EE554FE00051843 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCC714F01EE554FE00051843 /* Base */,
+				BCC714F21EE5551A00051843 /* gu-IN */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -191,6 +210,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -242,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -325,6 +346,7 @@
 				BCC714E01EE52DA000051843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
