@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ndf-bX-Fmd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0PY-VT-c78">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ndf-bX-Fmd" customClass="ViewController" customModule="MMLoginKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OXB-xk-MLO"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFg-mv-vjJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ip3-OS-PT5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdn-CL-rQ3" customClass="MMTextField" customModule="MMLoginKit">
+                                <rect key="frame" x="38" y="242.5" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2LK-K2-mBw"/>
+                                    <constraint firstAttribute="width" constant="300" id="Q96-fX-811"/>
+                                </constraints>
+                                <color key="textColor" red="0.3422979712" green="0.39760923390000003" blue="0.46281796689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.3422979712" green="0.39760923390000003" blue="0.46281796689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.15686274510000001" green="0.2470588235" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.97254901959999995" green="0.46666666670000001" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Ndf-bX-Fmd" id="rF6-xi-NFK"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cq3-hC-YzL" customClass="MMTextField" customModule="MMLoginKit">
+                                <rect key="frame" x="38" y="297.5" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LE8-2B-1st"/>
+                                    <constraint firstAttribute="width" constant="300" id="bSK-QQ-yWT"/>
+                                </constraints>
+                                <color key="textColor" red="0.3422979712" green="0.39760923390000003" blue="0.46281796689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" red="0.3422979712" green="0.39760923390000003" blue="0.46281796689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                        <color key="value" red="0.15686274510000001" green="0.2470588235" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                        <color key="value" red="0.97254901959999995" green="0.46666666670000001" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ5-zv-oNY" customClass="MMCustomButton" customModule="MMLoginKit" customModuleProvider="target">
+                                <rect key="frame" x="88" y="358" width="200" height="36"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.2470588235" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="PVE-kf-Ieb"/>
+                                    <constraint firstAttribute="width" constant="200" id="oQ5-Sg-0di"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.46666666670000001" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcK-oh-ev0" customClass="MMCustomButton" customModule="MMLoginKit" customModuleProvider="target">
+                                <rect key="frame" x="88" y="399" width="200" height="36"/>
+                                <color key="backgroundColor" red="0.15686274510000001" green="0.2470588235" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="5c2-oA-HwH"/>
+                                    <constraint firstAttribute="width" constant="200" id="Zks-Tw-Q5j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.46666666670000001" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lcK-oh-ev0" firstAttribute="top" secondItem="aQ5-zv-oNY" secondAttribute="bottom" constant="5" id="4gm-A0-ZBs"/>
+                            <constraint firstItem="pdn-CL-rQ3" firstAttribute="centerX" secondItem="Ip3-OS-PT5" secondAttribute="centerX" id="5gB-kn-OFz"/>
+                            <constraint firstItem="lcK-oh-ev0" firstAttribute="centerX" secondItem="Ip3-OS-PT5" secondAttribute="centerX" id="Qd8-pY-4jt"/>
+                            <constraint firstItem="pdn-CL-rQ3" firstAttribute="leading" secondItem="cq3-hC-YzL" secondAttribute="leading" id="RJn-bx-ggM"/>
+                            <constraint firstItem="aQ5-zv-oNY" firstAttribute="top" secondItem="cq3-hC-YzL" secondAttribute="bottom" constant="10" id="TNR-dK-o58"/>
+                            <constraint firstItem="aQ5-zv-oNY" firstAttribute="centerX" secondItem="Ip3-OS-PT5" secondAttribute="centerX" id="hyl-Cc-dQY"/>
+                            <constraint firstItem="cq3-hC-YzL" firstAttribute="top" secondItem="pdn-CL-rQ3" secondAttribute="bottom" constant="5" id="oeI-r2-UWz"/>
+                            <constraint firstItem="cq3-hC-YzL" firstAttribute="centerY" secondItem="Ip3-OS-PT5" secondAttribute="centerY" constant="-11" id="sX4-Td-1BX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4AA-8g-zbJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Its-nI-zsq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="143"/>
+        </scene>
+    </scenes>
+</document>
