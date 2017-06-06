@@ -18,7 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        defaultLocalizer.setSelectedLanguage(lang: "en")//"gu-IN")
+        let returnValue = UserDefaults.standard.string(forKey: Constant.UserDefaultKeys.kUserAppLanguage)
+        if returnValue == "en" || returnValue == nil {
+            defaultLocalizer.setSelectedLanguage(lang: "en")//"gu-IN")
+            UserDefaults.standard.set("en", forKey: Constant.UserDefaultKeys.kUserAppLanguage)
+        }else{
+            defaultLocalizer.setSelectedLanguage(lang: "gu-IN")
+            UserDefaults.standard.set("gu-IN", forKey: Constant.UserDefaultKeys.kUserAppLanguage)
+        }
+        UserDefaults.standard.synchronize()
+        
+        if UserDefaults.standard.bool(forKey: Constant.UserDefaultKeys.kLoginSuccess) {
+            
+        }
         
         return true
     }
